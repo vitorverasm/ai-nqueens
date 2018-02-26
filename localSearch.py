@@ -13,5 +13,5 @@ class localSearch(object):
             if problem.heuristic(result) is 0:
                 cnt += 1
                 s.append(result)
-        print " - Taxa de acerto: %2d/%d\tTempo de execucao: %f" % (cnt, n_iterations, time() - start)
+        print " - Hit rate: %2d/%d\tRuntime: %f" % (cnt, n_iterations, time() - start)
         return s

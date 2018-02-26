@@ -9,7 +9,7 @@ def printBoard(result, param):
     # Se tiver resultados e --all = 0
     if param == 0 and result:
         r = choice(result)
-        print r
+        # print r
         board = []
         for col in r:
             line = ['.'] * len(r)
@@ -21,7 +21,7 @@ def printBoard(result, param):
             print " ".join(line)
     # Se tiver resultados e --all = 1
     else:
-        print result
+        # print result
         board = []
         for r in result:
             for c in r:
